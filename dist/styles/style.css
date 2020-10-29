@@ -126,6 +126,9 @@ footer a {
   body {
     margin: 15px 25px;
   }
+  header h1 {
+    font-size: 2rem;
+  }
   .wrapper {
     display: grid;
     grid-template-areas:
