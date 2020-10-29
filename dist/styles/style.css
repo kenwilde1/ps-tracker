@@ -1,0 +1,163 @@
+:root {
+  --primary: #003087;
+  --light: #ffffff;
+  --dark: #000000;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+body {
+  background: var(--light);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  border: 0;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  filter: brightness(50%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content content"
+    "nav content content"
+    "nav footer footer";
+  gap: 1.2rem;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+nav ul {
+  display: grid;
+  padding: 0;
+  gap: 1.5rem;
+  list-style: none;
+  grid-template-rows: 1fr;
+}
+
+nav a {
+  color: var(--light);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: var(--light);
+  color: var(--dark);
+  box-shadow: var(--shadow);
+}
+
+header {
+  grid-area: header;
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.content {
+  padding: 0;
+  grid-area: content;
+  border: 1px solid var(--primary);
+  height: 70vh;
+  box-shadow: var(--shadow);
+}
+
+.content h2 {
+  text-align: center;
+  color: var(--light);
+  text-shadow: var(--shadow);
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.countdown p {
+  color: var(--light);
+  font-size: 3rem;
+}
+
+footer {
+  grid-area: footer;
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+    gap: 1.2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.console-appearance {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://cdn1.dotesports.com/wp-content/uploads/2019/10/08183030/flow.jpg");
+  background-size: cover;
+  text-shadow: var(--text-shadow);
+}
+
+.cyberpunk-appearance {
+  background: linear-gradient(rgba(44, 16, 16, 0.3), rgba(0, 0, 0, 0.5)),
+    url("https://external-preview.redd.it/BxSzZlRISCV3ap5zfwkuh5MAPaNbEWmujilw0d-U-ng.jpg?auto=webp&s=5359475446850ac0a32997ec9c25a4a44281ff60");
+  background-size: cover;
+  text-shadow: var(--text-shadow);
+}
+
+.valhalla-appearance {
+  background: linear-gradient(rgba(44, 16, 16, 0.3), rgba(0, 0, 0, 0.5)),
+    url("https://static.onecms.io/wp-content/uploads/sites/6/2020/04/29/Assassins-Creed.jpg");
+  background-size: cover;
+  text-shadow: var(--text-shadow);
+}
+
+.bugsnax-appearance {
+  background: linear-gradient(rgba(44, 16, 16, 0.3), rgba(0, 0, 0, 0.5)),
+    url("https://www.thesixthaxis.com/wp-content/uploads/2020/06/Bugsnax-Hero500.jpg");
+  background-size: cover;
+  text-shadow: var(--text-shadow);
+}

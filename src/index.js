@@ -1,0 +1,1 @@
+import { initializeEventListeners } from './displayContent';

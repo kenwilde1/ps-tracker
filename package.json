@@ -1,0 +1,23 @@
+{
+  "name": "ps-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenwilde1/ps-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenwilde1/ps-tracker/issues"
+  },
+  "homepage": "https://github.com/kenwilde1/ps-tracker#readme",
+  "devDependencies": {
+    "webpack": "^5.3.1",
+    "webpack-cli": "^4.1.0"
+  }
+}
