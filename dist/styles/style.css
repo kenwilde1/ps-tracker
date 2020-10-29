@@ -123,6 +123,9 @@ footer a {
 }
 
 @media (max-width: 500px) {
+  body {
+    margin: 15px 25px;
+  }
   .wrapper {
     display: grid;
     grid-template-areas:
