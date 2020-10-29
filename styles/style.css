@@ -87,6 +87,7 @@ nav {
   border: 1px solid var(--primary);
   height: 70vh;
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .content h2 {
@@ -117,7 +118,7 @@ footer {
   justify-content: center;
 }
 footer a {
-  margin-top: 15px;
+  margin-top: 22px;
   margin-left: 10px;
 }
 
@@ -131,6 +132,21 @@ footer a {
       "footer";
     gap: 1.2rem;
     grid-template-columns: 1fr;
+  }
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 60%;
+  }
+
+  .countdown p {
+    color: var(--light);
+    font-size: 1.6rem;
+  }
+  .content {
+    height: 100%;
   }
 }
 
